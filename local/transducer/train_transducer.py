@@ -12,7 +12,7 @@ import mlf
 DEF_MIN_LL = -999.0
 
 def usage():
-    print(" Usage: ./make_transducer.py [opts] <EMISSIONS> <REF_ALI> <AUD_ALI> <OUTPUT>")
+    print(" Usage: ./make_transducer.py [opts] <REF_ALI> <AUD_ALI> <OUTPUT> <EMISSIONS>")
     print("     --iter : specify the number of training iterations. Default = 8")
     print("     --train_size : specify what fraction of input data to train on. Default = 1.0")
     print("     --add_1_smooth: specify the add val parameter for smoothing HMM arc counts. Default = 0.01")
