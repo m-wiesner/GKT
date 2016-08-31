@@ -2,6 +2,11 @@
 
 . ./conf/aud.conf
 
+if [ $# -eq 0 ]; then
+  echo "Usage: ./extract_features.sh data/dataset1 data/dataset2 ..."
+  exit 1
+fi
+
 # Get input arguments
 data_dirs=( "$@" )
 

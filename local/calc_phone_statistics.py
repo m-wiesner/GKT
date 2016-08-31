@@ -7,6 +7,7 @@ import pdb
 def main():
   if len(sys.argv[1:]) < 2:
     print("Usage: ./local_lorelei/calc_phone_statistics.py MLF FREQ DUR")
+    print("     Create a file with duration statistics of MLF file")
     sys.exit(1)
 
   # Read in MLF file

@@ -8,6 +8,9 @@ def main():
 
   if len(sys.argv[1:]) < 3:
     print("Usage: ./ali_int2sym.py <ali_file_in> <ali_file_out> <phones.txt>")
+    print(" Converts ali file from one symbol set to another defined by the "
+            "mapping in phones.txt. The phones.txt file from a kaldi data/lang "
+            "would work well for the mapping for instance.")
     sys.exit(1)
 
   ALI = sys.argv[1]

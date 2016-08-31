@@ -55,6 +55,11 @@ class Grapheme:
 
 class Utterance:
     def __init__(self,utterance_id,utterance,graphemes):
+        '''
+            Constructure for utterance HMM. It defines the way that individual
+            Grapheme objects (HMMs) can be concatenated together to perform
+            utterance level training.
+        '''
         self.utterance_id = utterance_id
         self.model = utterance.split(" ")
         self.G = graphemes

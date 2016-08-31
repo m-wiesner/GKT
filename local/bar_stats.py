@@ -9,6 +9,7 @@ import sys
 
 if len(sys.argv[1:]) == 0:
   print("Usage: ./local_lorelei/bar_stats.py STATS1, STATS2, ... ")
+  print("   Create a bar plot where the different bars are specified by STATS1, ... ")
   sys.exit(1)
 
 if len(sys.argv[1:]) > 7:

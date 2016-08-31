@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Test utterances for the pdf-arc fst. 
+
+
 if [ $# -ne 4 ]; then
   echo "Usage: ./test-utterances.py <utt_dir> <train_data> <fst_dir> <lang_dir>" 
   exit 1
@@ -47,8 +50,4 @@ for lbl in ${labels[@]}; do
   fstprint --isymbols=${fst_dir}/isyms.txt --osymbols=${lang_dir}/words.txt \
     $lbl ${lbl_dir}/${lbl_name}  
 done
-
-
-
-
 

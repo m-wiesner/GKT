@@ -6,7 +6,11 @@ import os
 
 def main():
   if(len(sys.argv[1:]) < 2):
-    sys.stderr.write("Usage: ./local_lorelei/babel2cluster.py <data/train/text> <clustering/words> [missing utterances]")
+    print("Usage: ./local_lorelei/babel2cluster.py <data/train/text> <clustering/words> [missing utterances]")
+    print(" Converts utterances in an ali format file for BABEL data into "
+            "documents, where each document is a conversation with one "
+            "utterance on each line, with no utterance_id")
+
     sys.exit(1)
   
   missing_utterances = []

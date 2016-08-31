@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This script has the basic structure for creating the Openfst transducer
+# from AUDs to graphemes.
+
 if [ $# -ne 2 ]; then
   echo "./make-h-transducer.sh <fst_dir> <lang_dir>"
   exit 1
